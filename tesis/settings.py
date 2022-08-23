@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'practicas',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'tesis.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd9o6vpobuskdrp',
+        'USER': 'aysivsqpmttmru',
+        'PASSWORD': 'd8bf27f604f69a49f71266d19bc196d3d795377b855b32b7a489696a2f2d0768',
+        'HOST': 'ec2-54-86-224-85.compute-1.amazonaws.com',
+        'PORT':'5432'
     }
 }
 
