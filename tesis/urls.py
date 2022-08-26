@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tesis.views import vista1Def
+from tesis import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('vista1/', vista1Def)
+    path('', views.homePage, name='home'),
+    path('bienvenido/', views.vista1Def),
 ]
