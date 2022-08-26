@@ -19,6 +19,7 @@ from tesis import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homePage, name='home'),
-    path('bienvenido/', views.vista1Def),
+    path('vista1/', views.vista1Def),
+    path('busqueda/', views.practicass),
+    path('vista2/',views.vista2Def),
 ]
